@@ -34,13 +34,13 @@ bpkg <flag> <package_manager>/<package>
 For pacman(and paru/yay in future) you can use all the pacman flags
 
 # Supported package managers
- [X] Pacman
- [X] XBPS
- [X] apk
- [X] flatpak
- [ ] nix
- [ ] apt
- [ ] paru/yay
- [ ] dnf
- [ ] emerge
- [ ] zypper
+- [X] Pacman
+- [X] XBPS
+- [X] apk
+- [X] flatpak
+- [ ] nix
+- [ ] apt
+- [ ] paru/yay
+- [ ] dnf
+- [ ] emerge
+- [ ] zypper
