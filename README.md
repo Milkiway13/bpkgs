@@ -39,8 +39,8 @@ For pacman(and paru/yay in future) you can use all the pacman flags
 - [X] apk
 - [X] flatpak
 - [ ] nix
-- [ ] apt
-- [ ] paru/yay
-- [ ] dnf
-- [ ] emerge
+- [ ] apt (coming in 26.3)
+- [ ] paru/yay (coming in 26.3)
+- [ ] dnf (coming in 26.3)
+- [ ] emerge (coming in 26.3)
 - [ ] zypper
