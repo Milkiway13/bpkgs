@@ -30,8 +30,13 @@ bpkg <flag> <package_manager>/<package>
 | ```-Sy``` | Sync repos and install package |
 | ```-R``` | Remove package |
 
-##### Note
-For pacman(and paru/yay in future) you can use all the pacman flags
+#### Flags supported(excluding -S/-R)
+| Flag | Xbps | Flatpak | Apk | 
+| ---- | ---- | ------- | --- |
+|  -Sy | Yes  |   No    | No  |
+
+###### Note
+Pacman/Paru/Yay aren't listed since they suport every flag
 
 # Supported package managers
 - [X] Pacman
