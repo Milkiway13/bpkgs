@@ -31,21 +31,37 @@ bpkg <flag> <package_manager>/<package>
 | ```-R``` | Remove package |
 
 #### Flags supported(excluding -S/-R)
-| Flag | Xbps | Flatpak | Apk | 
-| ---- | ---- | ------- | --- |
-|  -Sy | Yes  |   No    | No  |
+| Flag | Xbps | Flatpak | Apk | Dnf | Emerge | Apt |
+| ---- | ---- | ------- | --- | --- | ------ | --- |
+|  -Sy | Yes  |   No    | No  | No  | No     | No  |
 
 ###### Note
 Pacman/Paru/Yay aren't listed since they suport every flag
 
+# Configuration
+Since 26.3 bpkg has config file, for now there's only one value - sudo_command
+1. Create config directory:
+```bash
+mkdir ~/.config/bpkg
+```
+2. Create and open config file with your prefered text editor(for example nvim):
+```bash
+nvim ~/.config/bpkg/config
+```
+3. In this file add this:
+```bash
+# For example set doas
+sudo_command = doas
+```
+
 # Supported package managers
-- [X] Pacman
-- [X] XBPS
+- [X] pacman
+- [X] xbps
 - [X] apk
 - [X] flatpak
-- [ ] nix
-- [ ] apt (coming in 26.3)
-- [ ] paru/yay (coming in 26.3)
-- [ ] dnf (coming in 26.3)
-- [ ] emerge (coming in 26.3)
+- [X] apt
+- [X] paru/yay
+- [X] dnf
+- [X] emerge
 - [ ] zypper
+- [ ] nix
